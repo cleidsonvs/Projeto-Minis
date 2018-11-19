@@ -538,6 +538,9 @@
 .fa-shopping-cart:before {
   content: "\f07a";
 }
+.fa-hdd:before {
+  content:"\f0a0";
+}
 .fa-folder:before {
   content: "\f07b";
 }
