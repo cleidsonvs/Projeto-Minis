@@ -17,8 +17,6 @@
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- JQVMap -->
-    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
@@ -30,7 +28,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -54,20 +52,20 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="index.html" ><i class="fa fa-home"></i> Home <span class="fa"></span></a></li>
+                  <li><a href="index.php" ><i class="fa fa-home"></i> Home <span class="fa"></span></a></li>
                   <li><a><i class="fa fa-shopping-cart"></i> Vendas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="vendas-novo-pedido.html">Criar novo pedido</a></li>
-                      <li><a href="vendas-pedidos.html">Pedidos em aberto</a></li>
+                      <li><a href="./vendas-novo-pedido.php">Criar novo pedido</a></li>
+                      <li><a href="./vendas-pedidos-abertos.php">Pedidos em aberto</a></li>
                     </ul>
                   </li>
-                  <li><a href="estoque.html" ><i class="fa fa-inbox"></i> Estoque <span class="fa"></span></a>
+                  <li><a href="./estoque.php" ><i class="fa fa-inbox"></i> Estoque <span class="fa"></span></a>
                   </li>
-                  <li><a href="financeiro.html" ><i class="fa fa-money"></i> Financeiro <span class="fa"></span></a></li>
+                  <li><a href="./financeiro.php" ><i class="fa fa-money"></i> Financeiro <span class="fa"></span></a></li>
                   <li><a><i class="fa fa-bar-chart-o"></i> Relatórios <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="morisjs.html">Moris JS</a></li>
-                      <li><a href="other_charts.html">Other Charts</a></li>
+                      <li><a href="./morisjs.php">Moris JS</a></li>
+                      <li><a href="./other_charts.php">Other Charts</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -92,7 +90,7 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="./profile.html"> Profile</a></li>
+                    <li><a href="./profile.php"> Profile</a></li>
                     <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
@@ -100,7 +98,7 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="login.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 
@@ -179,7 +177,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Other Charts</h3>
+                <h3>Morris Js</h3>
               </div>
 
               <div class="title_right">
@@ -193,14 +191,15 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="clearfix"></div>
 
             <div class="row">
-              <div class="col-md-12">
+              <!-- bar chart -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Other Graph types <small> Assorted graph types</small></h2>
+                    <h2>Bar Charts <small>Sessions</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -219,113 +218,157 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-
-                    <div class="row">
-                      <div class="col-md-6" style="padding: 30px">
-                        <p>USA Vector Map</p>
-                        <div id="usa_map" style="height:400px !important;"></div>
-                      </div>
-                      <div class="col-md-6" style="padding: 30px">
-                        <p>World Vector Map</p>
-                        <div id="world-map-gdp" style="height:400px;"></div>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-
-
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="panel panel-body">
-                          <div class="x_title">
-                            <h4>Easy Pie Chart</h4>
-                          </div>
-
-                          <p>Easy pie chart is a jQuery plugin that uses the canvas element to render highly customizable, very easy to implement, simple pie charts for single values.</p>
-                          <div class="row">
-                            <div class="col-xs-4">
-                              <span class="chart" data-percent="86">
-                                              <span class="percent"></span>
-                              </span>
-                            </div>
-                            <div class="col-xs-4">
-                              <span class="chart" data-percent="73">
-                                              <span class="percent"></span>
-                              </span>
-                            </div>
-                            <div class="col-xs-4">
-                              <span class="chart" data-percent="60">
-                                              <span class="percent"></span>
-                              </span>
-                            </div>
-                            <div class="clearfix"></div>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div class="col-md-6">
-                        <div class="panel panel-body">
-                          <div class="x_title">
-                            <h4>Sparkline Inline Graphs</h4>
-                          </div>
-
-                          <p>Yet another great library for inline data visualizations</p>
-                          <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th style="width:20%"></th>
-                                <th style="width:50%"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th>
-                                  <span class="sparkline_line" style="height: 160px;">
-                                                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                                                  </span>
-                                </th>
-                                <td>Line Graph</td>
-                              </tr>
-                              <tr>
-                                <th>
-                                  <span class="sparkline_area" style="height: 160px;">
-                                                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                                                  </span>
-                                </th>
-                                <td>Line Area Graph</td>
-                              </tr>
-                              <tr>
-                                <th>
-                                  <span class="sparkline_bar" style="height: 160px;">
-                                                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                                                  </span>
-                                </th>
-                                <td>Bar Graph</td>
-                              </tr>
-                              <tr>
-                                <th>
-                                  <span class="sparkline_pie" style="height: 160px;">
-                                                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                                                  </span>
-                                </th>
-                                <td>Pie Chart</td>
-                              </tr>
-                              <tr>
-                                <th>
-                                  <span class="sparkline_discreet" style="height: 160px;">
-                                                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                                                  </span>
-                                </th>
-                                <td>Discrete chart</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
+                    <div id="graph_bar" style="width:100%; height:280px;"></div>
                   </div>
                 </div>
               </div>
+              <!-- /bar charts -->
+
+              <!-- bar charts group -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Bar Chart Group <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content1">
+                    <div id="graph_bar_group" style="width:100%; height:280px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <!-- /bar charts group -->
+
+              <!-- bar charts group -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Bar Chart Group <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content2">
+                    <div id="graphx" style="width:100%; height:300px;" ></div>
+                  </div>
+                </div>
+              </div>
+              <!-- /bar charts group -->
+
+              <!-- pie chart -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Pie Chart <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content2">
+                    <div id="graph_donut" style="width:100%; height:300px;"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Pie chart -->
+
+              <!-- graph area -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Graph area <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content2">
+                    <div id="graph_area" style="width:100%; height:300px;"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- /graph area -->
+
+              <!-- line graph -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Line Graph <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content2">
+                    <div id="graph_line" style="width:100%; height:300px;"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- /line graph -->
             </div>
           </div>
         </div>
@@ -350,18 +393,12 @@
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- jQuery Sparklines -->
-    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-    <!-- JQVMap -->
-    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.usa.js"></script>
-    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-    <!-- easy-pie-chart -->
-    <script src="../vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <!-- morris.js -->
+    <script src="../vendors/raphael/raphael.min.js"></script>
+    <script src="../vendors/morris.js/morris.min.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
-	
+
   </body>
 </html>

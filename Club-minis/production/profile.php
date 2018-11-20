@@ -28,7 +28,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -52,20 +52,20 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="index.html" ><i class="fa fa-home"></i> Home <span class="fa"></span></a></li>
+                  <li><a href="index.php" ><i class="fa fa-home"></i> Home <span class="fa"></span></a></li>
                   <li><a><i class="fa fa-shopping-cart"></i> Vendas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="vendas-novo-pedido.html">Criar novo pedido</a></li>
-                      <li><a href="vendas-pedidos.html">Pedidos em aberto</a></li>
+                      <li><a href="vendas-novo-pedido.php">Criar novo pedido</a></li>
+                      <li><a href="vendas-pedidos.php">Pedidos em aberto</a></li>
                     </ul>
                   </li>
-                  <li><a href="estoque.html" ><i class="fa fa-inbox"></i> Estoque <span class="fa"></span></a>
+                  <li><a href="estoque.php" ><i class="fa fa-inbox"></i> Estoque <span class="fa"></span></a>
                   </li>
-                  <li><a href="financeiro.html" ><i class="fa fa-money"></i> Financeiro <span class="fa"></span></a></li>
+                  <li><a href="financeiro.php" ><i class="fa fa-money"></i> Financeiro <span class="fa"></span></a></li>
                   <li><a><i class="fa fa-bar-chart-o"></i> Relatórios <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="morisjs.html">Moris JS</a></li>
-                      <li><a href="other_charts.html">Other Charts</a></li>
+                      <li><a href="morisjs.php">Moris JS</a></li>
+                      <li><a href="other_charts.php">Other Charts</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -90,7 +90,7 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="profile.html"> Profile</a></li>
+                    <li><a href="profile.php"> Profile</a></li>
                     <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
@@ -98,7 +98,7 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="login.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 
