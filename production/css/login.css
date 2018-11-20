@@ -1,0 +1,13 @@
+body.login{
+    background-image: url("./../images/bg-login-blured.jpg");    
+
+}
+
+#login-form{
+    background-color: #181515bb;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 15px;    
+    width: 100%;
+    color: #ececece7;
+}
