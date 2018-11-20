@@ -40,7 +40,7 @@
                 <input type="password" class="form-control" placeholder="Password" name="password" required="" />
               </div>
               <div>
-                <a class="btn btn-default submit" href="index.html">Entrar</a>
+                <a class="btn btn-default submit" href="index.php">Entrar</a>
                 <a class="reset_pass" href="#">Esqueceu sua senha?</a>
               </div>
 
@@ -71,7 +71,7 @@
                 <input type="password" class="form-control" placeholder="Password" required="" />
               </div>
               <div>
-                <a class="btn btn-default submit" href="index.html">Submit</a>
+                <a class="btn btn-default submit" href="index.php">Submit</a>
               </div>
 
               <div class="clearfix"></div>
