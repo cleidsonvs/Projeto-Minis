@@ -31,7 +31,7 @@
       <div class="login_wrapper">
         <div class="animate form login_form" id="login-form">
           <section class="login_content">
-            <form>
+            <form action="./php/login_check.php" method="post">
               <h1>CBK MiniERP</h1>
               <div>
                 <input type="text" class="form-control" placeholder="Username" name="username" required="" />
@@ -40,9 +40,10 @@
                 <input type="password" class="form-control" placeholder="Password" name="password" required="" />
               </div>
               <div>
-                <a class="btn btn-default submit" href="index.php">Entrar</a>
-                <button class="btn btn-default submit" type="submit" action="./scripts_php/login_validation.php" ></button>
-                <a class="reset_pass" href="#">Esqueceu sua senha?</a>
+                <!-- <a class="btn btn-default submit" href="index.php">Entrar</a> -->
+                <button class="btn btn-default submit" type="submit" > Entrar </button>
+                <br>
+                <a style="alignment: center; margin: 2px; float: none;" class="reset_pass" href="#">Esqueceu sua senha?</a>
               </div>
 
               <div class="clearfix"></div>
