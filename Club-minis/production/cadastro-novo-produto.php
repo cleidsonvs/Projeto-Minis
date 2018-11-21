@@ -232,21 +232,31 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
+<!--
+                    --><?php
+/*                      include("./php/product_scripts.php");
+                      if(add_product_db($_GET['p_name'],$_GET['p_qtd'])){
+                        echo "<div class='alert alert-success'><strong>Sucesso!</strong> O produto foi adicionado com sucesso</div>";
+                      } else{
+                          echo "<div class='alert alert-danger'><strong>Falha!</strong> Ocorreu alguma falha ao adicionar o produto. </div>";
+                      }
+                    */?>
+
                     <br />
-                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                    <form id="demo-form2" data-parsley-validate action="./php/product_scripts.php" method="get" class="form-horizontal form-label-left">
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nome do Produto <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="first-name" name="p_name" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Quantidade <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" id="last-name" name="p_qtd" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="ln_solid"></div>
