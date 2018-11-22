@@ -1,19 +1,25 @@
 <?php
-require_once("Sql.php");
 
-define('HOST','127.0.0.1');
-define('USER','root');
-define('PASSWORD','33541792');
-define('DB','db_cbk');
+
+include("Sql.php");
 
 $db = new Sql();
 
-$db->query("insert into t_produto (nome,qtd) values('pen',88)");
-
 echo "conectado com sucesso<br/>";
 
-// $name = $_GET["p_name"];
-// $qtd = $_GET["p_qtd"];
+$name = $_GET["p_name"];
+$qtd = $_GET["p_qtd"];
+print "<br/>";
+print "insert into t_produto (nome,qtd) values('".$name."',".$qtd.")";
+
+try{
+    $db->query("insert into t_produto (nome,qtd) values('".$name."',".$qtd.")");
+
+} catch(Exception $e){
+    print $e->collator_get_error_message();
+    
+}
+
 
 // $query = "insert into t_produto(nome,qtd) values ($name,$qtd)";
 
@@ -30,4 +36,6 @@ echo "conectado com sucesso<br/>";
     echo "Fail";
     return false;
 }*/
-header('Location : ./../cadastro-novo-produto.php');
+//header('Location: http://localhost/Projeto-Minis/Club-minis/production/cadastro-novo-produto.php');
+
+?>

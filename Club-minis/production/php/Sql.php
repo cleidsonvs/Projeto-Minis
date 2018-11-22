@@ -1,7 +1,5 @@
 <?php
 
-//namespace Fpin\DB; // Se usar namespace
-
 class Sql {
 
 	const HOSTNAME = "127.0.0.1";
@@ -20,7 +18,7 @@ class Sql {
 			Sql::PASSWORD, array('charset'=>'utf8')
 		);
 		//$this->conn->query("SET CHARACTER SET utf8");
-			echo "Conectado com Sucesso!";
+
 	}
 
 	private function setParams($statement, $parameters = array())
