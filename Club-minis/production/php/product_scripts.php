@@ -8,18 +8,8 @@ define('DB','db_cbk');
 
 $db = new Sql();
 
-$db->query("insert into t_produto (cod,nome,qtd) values(null,'everton',18)");
+$db->query("insert into t_produto (nome,qtd) values('pen',88)");
 
-
-
-// $mysqli = new mysqli(HOST,USER,PASSWORD,DB);
-
-// if($mysqli->connect_errno){
-//     echo "falha na conexão:(".$mysqli->connect_errno.")".$mysqli->connect_error;
-// }
-
-
-// $conn = mysqli_connect(HOST,USER,PASSWORD,DB) or die ('Não foi possível conectar');
 echo "conectado com sucesso<br/>";
 
 // $name = $_GET["p_name"];
@@ -40,4 +30,4 @@ echo "conectado com sucesso<br/>";
     echo "Fail";
     return false;
 }*/
-// header('Location : ./../cadastro-novo-produto.php');
+header('Location : ./../cadastro-novo-produto.php');

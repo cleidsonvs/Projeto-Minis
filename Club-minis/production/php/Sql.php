@@ -6,7 +6,7 @@ class Sql {
 
 	const HOSTNAME = "127.0.0.1";
 	const USERNAME = "root";
-	const PASSWORD = "33541792";
+	const PASSWORD = "123456";
 	const DBNAME = "db_cbk";
 
 	private $conn;
@@ -20,7 +20,7 @@ class Sql {
 			Sql::PASSWORD, array('charset'=>'utf8')
 		);
 		//$this->conn->query("SET CHARACTER SET utf8");
-
+			echo "Conectado com Sucesso!";
 	}
 
 	private function setParams($statement, $parameters = array())
