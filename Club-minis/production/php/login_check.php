@@ -1,13 +1,12 @@
 <?php
-    include("./db_connect.php");
 
 /*    if(empty($_POST['username']) || empty($_POST['password'])){
         header('Location: login.php');
         exit();
     }*/
 
-$user = mysqli_real_escape_string($conn ,$_POST['username']);
-$password = mysqli_real_escape_string($conn,$_POST['password']);
+$user = $_POST['username'];
+$password = $_POST['password'];
 /*
 $query = "select usuario from t_usuario where usuario='{$user}' and senha='{$password}'";
 

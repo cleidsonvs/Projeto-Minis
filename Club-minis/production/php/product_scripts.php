@@ -36,6 +36,6 @@ try{
     echo "Fail";
     return false;
 }*/
-//header('Location: http://localhost/Projeto-Minis/Club-minis/production/cadastro-novo-produto.php');
+header('Location: http://localhost/Projeto-Minis/Club-minis/production/cadastro-novo-produto.php');
 
 ?>
