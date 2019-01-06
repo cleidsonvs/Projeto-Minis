@@ -13,7 +13,7 @@ create table t_produto (
 
 create table t_cliente (
     cod int primary key auto_increment,
-    cpf int unique not null,
+    cpf varchar(11) unique not null,
     nome varchar(100) not null,
     endereco varchar(100),
     data_cadastro date
@@ -26,7 +26,7 @@ create table t_pedido (
     cliente varchar (100),
     produto varchar(100),
     qtd int,
-    dada_pedido date
+    data_pedido date
 );
 
 /*Table de financeiro vai ser usada para o módulo de Financeiro*/
